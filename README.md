@@ -1,4 +1,4 @@
-# JULIAN_CF
+# JULIAN-CF
 
 Base Bot WhatsApp (Case)
 
@@ -8,13 +8,13 @@ Base Bot WhatsApp (Case)
 Clone the project
 
 ```bash
-  git clone https://github.com/NCTea/Felice-MD
+  https://github.com/Enex-kblm/julian-cf.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd Felice-MD
+  cd JULIAN-CCF
 ```
 
 Install dependencies
@@ -38,8 +38,11 @@ Start the server
 
 
 ## Features
-
-- Menu
+- CONFESS
+- BUTTON MENU
+- STICKER
+- CHECK ID NEWSLETTER
+- IMG TO STICKER
 
 
 ## Thanks to
