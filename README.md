@@ -8,30 +8,30 @@ Base Bot WhatsApp (Case)
 Clone the project
 
 ```bash
-  https://github.com/Enex-kblm/julian-cf.git
+https://github.com/Enex-kblm/julian-cf.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd JULIAN-CCF
+cd JULIAN-CCF
 ```
 
 Install dependencies
 
 ```bash
-  npm install
+npm install
 ```
 
 Install dependencies **recommended**
 ```bash
- npm install --force
+npm install --force
 ```
 
 Start the server
 
 ```bash
-  npm start
+npm start
 ```
 
 
@@ -52,7 +52,7 @@ This project is used by the following companies:
 - My God
 - My Parent
 - XYZ Team
-- Me
+- My gf
 
 
 ## Authors
