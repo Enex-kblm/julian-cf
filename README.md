@@ -53,6 +53,7 @@ npm start
 - CHECK ID NEWSLETTER
 - IMG TO STICKER
 - AI CHATBOT
+- ON / OFF LAMPU KAMAR (ESP32)
 
 
 ## Thanks to
