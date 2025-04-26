@@ -8,7 +8,7 @@ Base Bot WhatsApp (Case)
 Clone the project
 
 ```bash
-https://github.com/Enex-kblm/julian-cf.git
+git clone https://github.com/Enex-kblm/julian-cf.git
 ```
 
 Go to the project directory
