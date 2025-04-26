@@ -9,8 +9,6 @@
                                                         
 </pre>
   
-# JULIAN-CF
-
 Base Bot WhatsApp (Case)
 
 
