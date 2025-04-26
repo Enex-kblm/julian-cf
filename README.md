@@ -1,3 +1,7 @@
+#pre
+tes
+$pre
+
 # JULIAN-CF
 
 Base Bot WhatsApp (Case)
@@ -43,6 +47,7 @@ npm start
 - STICKER
 - CHECK ID NEWSLETTER
 - IMG TO STICKER
+- AI CHATBOT
 
 
 ## Thanks to
