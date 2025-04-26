@@ -11,7 +11,7 @@ global.v = '𝘃'
 global.thumbnail = "https://files.catbox.moe/abgnqa.jpg"
 
 //kontrol lampu rumah pake bot whatsapp via esp32
-global.vps = "192.183.14.1"
+global.vps = "192.xxx.xx.x"
 global.port = "1883" 
 global.usrmqtt = "kosong"
 global.pass = "kosong"
