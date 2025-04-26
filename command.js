@@ -12,6 +12,8 @@ const { execSync } = require("child_process");
 const chalk = require("chalk");
 ffmpeg.setFfmpegPath(ffmpegStatic);
 const mqtt = require("mqtt");
+const Ai4Chat = require("./Ai4Chat.js");
+
 
 const mqttConfig = {
     host: `${global.vps}`,
@@ -216,11 +218,6 @@ if (!isCmd) {
  
 
       case 'menu': {
-        const osu = require("node-os-utils");
-        const cpu = osu.cpu;
-        const mem = osu.mem;
-        const cpuUsage = await cpu.usage();
-        const memInfo = await mem.info();
         const jumlahPengguna = Object.keys(penggunaData).length;
         const uptimeSeconds = process.uptime();
         const hours = Math.floor(uptimeSeconds / 3600);
@@ -240,10 +237,6 @@ Version   : ${global.v}${global.botv}
 Status    : ${global.status}
 User      : *${jumlahPengguna}*
 Active    : *${uptimeFormatted}* 
-
-*[ System Info ]*
-• CPU  : *${cpuUsage}%* 
-• RAM  : *${memInfo.usedMemMb}MB* / *${memInfo.totalMemMb}MB*
 
 *[ Owner Info ]*
 Owner     : ${global.owner}
@@ -731,8 +724,20 @@ ID Pengirim: *${session.anon}*`;
         }
         break;
         
-
-
+        case 'ai': {
+          if (!text) return m.reply(`Kirimkan prompt-nya!\n\nContoh: ${prefix}ai Siapa presiden Indonesia?`);
+          try {
+            const hasil = await Ai4Chat(text);
+            console.log(hasil); // Tambahkan ini untuk cek apa yang dikembalikan API
+            m.reply(typeof hasil === "object" ? JSON.stringify(hasil, null, 2) : hasil);
+          } catch (err) {
+            console.error(err);
+            m.reply("Gagal mengambil respon dari AI: " + err.message);
+          }
+          break;
+        }
+        
+        
       default:
         if (budy.startsWith("=>")) {
           if (!isCreator) return;
